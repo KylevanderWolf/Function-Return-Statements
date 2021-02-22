@@ -1,26 +1,26 @@
 //Check if Number is bigger than 100
 const checkNumber = (number) => {
     if (number > 100) {
-        console.log(number + " is higher then 100")
+        return true
     } else {
-        console.log(number + " is equal or lower then 100")
+        return false
     }
 }
-checkNumber(10)
+console.log(checkNumber(10))
 
 //AI bouncer
 const bouncerCheck = (maxCount, currentCount, age) => {
     if (age <= 18) {
-        console.log('club is for adults')
+        return 'club is for adults'
     }
     else if (maxCount >= currentCount) {
-        console.log('come in')
+        return 'come in'
     }
     else {
-        console.log("its too busy now, come back later")
+        return "its too busy now, come back later"
     }
 }
-bouncerCheck(100, 80, 20)
+console.log(bouncerCheck(100, 80, 20))
 
 
 //Calculate Average
