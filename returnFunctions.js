@@ -13,7 +13,7 @@ const bouncerCheck = (maxCount, currentCount, age) => {
     if (age <= 18) {
         console.log('club is for adults')
     }
-    else if (maxCount > currentCount) {
+    else if (maxCount >= currentCount) {
         console.log('come in')
     }
     else {
